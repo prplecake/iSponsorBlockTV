@@ -6,7 +6,7 @@ authors = [
 ]
 description = "SponsorBlock client for all YouTube TV clients"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<4.0"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
@@ -18,6 +18,23 @@ dynamic = ["dependencies"]
 [tool.hatch.metadata.hooks.requirements_txt]
 files = ["requirements.txt"]
 
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+aiohttp = "3.14.3"
+appdirs = "1.4.4"
+async-cache = "1.1.1"
+pyytlounge = "3.3.0"
+rich = "15.0.0"
+ssdp = "1.3.1"
+textual = "8.2.8"
+textual-slider = "0.2.0"
+xmltodict = "1.0.4"
+rich-click = "1.9.8"
+yarl = "1.24.5"
+zeroconf = "0.150.0"
+pychromecast = "14.0.10"
 [project.urls]
 "Homepage" = "https://github.com/dmunozv04/iSponsorBlockTV"
 "Bug Tracker" = "https://github.com/dmunozv04/iSponsorBlockTV/issues"
